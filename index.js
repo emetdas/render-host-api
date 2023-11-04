@@ -1,8 +1,6 @@
 const express = require('express');
 const mysql = require('mysql');
 require('dotenv').config();
-const io = new WebSocket.Server({ noServer: true });
-global.io = new WebSocket.Server({ noServer: true });
 const api = express();
 
 const dbConfig = {
